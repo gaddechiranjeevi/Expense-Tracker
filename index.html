@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Expence Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Track Ur Expense</h1>
+        <div>
+            <form onsubmit="myfunc(event)">
+              <label>Choose Expense Amount:</label>
+              <input type="number" id="expense" name="expense" placeholder="Type Expense.....">
+              <label>Choose Description:</label>
+              <input type="text" id="description" name="description" placeholder="Describe..">
+          
+              <label>Choose category:</label>
+              <select id="category" name="category">
+                <option selected>Select category</option>
+                <option value="fuel">Fuel</option>
+                <option value="food">Food</option>
+                <option value="movie">Movie</option>
+                <option value="Entertainment">Entertainment</option>
+              </select>
+            
+              <input type="submit" value="Add Expense">
+            </form>
+          </div>
+        <ul type="ExpenseList" id = 'ExpenseList'></ul>
+    <script src="main.js"></script>
+    </body>
+</html>
